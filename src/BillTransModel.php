@@ -75,9 +75,7 @@ class BillTransModel
         $this->amount = $amount;
     }
 
-    /**
-     * @return int
-     */
+
     public function getBillId()
     {
         return $this->billId;

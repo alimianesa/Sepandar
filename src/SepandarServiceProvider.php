@@ -34,7 +34,7 @@ class SepandarServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/sepandar.php', 'sepandar');
 
         // Register the service the package provides.
-        $this->app->singleton('sepandar', function ($app) {
+        $this->app->singleton('sepandar', function () {
             return new Sepandar;
         });
     }

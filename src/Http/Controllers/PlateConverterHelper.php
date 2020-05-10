@@ -23,7 +23,7 @@ class PlateConverterHelper
         $final = substr($plate,0 ,2) . $this->converter[substr($plate , 2 ,2)]
             .substr($plate,4 ,3) . substr($plate,9 , 2);
 
-        return $int =  (int) $final;
+        return (int) $final;
     }
 
     /**
